@@ -1,10 +1,9 @@
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
@@ -68,13 +67,8 @@ export default function Events() {
                     console.log(actualData)
                 });
 
-            // const response = await api.get(`${input}/json`)
-            // setCep(response.data)
-            //   setInput('')
-
         } catch (error) {
             alert(`Invalid Input!`)
-            //   setInput('')
             return
         }
     }
